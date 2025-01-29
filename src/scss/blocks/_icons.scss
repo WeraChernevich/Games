@@ -1,0 +1,41 @@
+.icons-wrapper {
+	padding: 30px 0;
+	display: flex;
+	column-gap: 30px;
+}
+
+.icon {
+	fill: transparent;
+	stroke: transparent;
+}
+
+.icon--logo {
+	width: 100px;
+	height: 64px;
+	fill: #c0b7e8;
+}
+
+.icon--arrow-small-right {
+	stroke: #c0b7e8;
+	width: 100px;
+	height: 100px;
+}
+
+.icon--location,
+.icon--phone-call {
+	fill: #c0b7e8;
+	width: 70px;
+	height: 70px;
+}
+
+.icon--mail {
+	stroke: #c0b7e8;
+	width: 70px;
+	height: 70px;
+}
+
+.icon--arrow-big-right {
+	stroke: #c0b7e8;
+	width: 157px;
+	height: 60px;
+}

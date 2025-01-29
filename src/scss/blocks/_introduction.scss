@@ -1,0 +1,50 @@
+.introduction {
+    min-height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.introduction__desc,
+.introduction__about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.introduction__title h2,
+.introduction__about-title h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.introduction__title h2 span:first-child,
+.introduction__about-title h2 span:first-child{
+    display: block;
+
+}
+
+
+.introduction__title-second-line {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.introduction__about {
+    align-items: center;
+}
+
+
+.introduction__about img {
+    border-radius: 240px 100px 240px 100px;
+}
+
+.introduction__about-title {
+    padding-bottom: 40px;
+}
+
+
+
+
