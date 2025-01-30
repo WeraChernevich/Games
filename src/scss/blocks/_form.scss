@@ -1,0 +1,73 @@
+.form__form {
+    min-height: 1008px;
+    padding: 90px 115px;
+    border-radius: 100px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: radial-gradient(50% 50% at 50% 50%, #403a5f 0%, #211e2e 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
+}
+
+.form__title {
+    position: relative;
+    text-align: center;
+}
+
+.form__title h2 {
+    padding-bottom: 25px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to left,#343045 0%,#C0B7E8 34.8958%,#8176AF 68.75%,#343045 100%);
+    }
+}
+
+.form__title h2 + p {
+    padding-top: 25px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.form-group input,
+.form-group textarea {
+    width: 48%;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background: transparent;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+.form-group.form-group--small input {
+    width: 524px;
+    height: 72px;
+}
+
+.form-group.form-group--long input {
+    width: 1058px;
+    height: 72px;
+}
+
+.form-group.form-group--hight textarea {
+    width: 1058px;
+    height: 210px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    padding-top: 20px;
+    left: 15px;
+    color: #aaa;
+}

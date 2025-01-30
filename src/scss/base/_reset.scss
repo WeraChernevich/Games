@@ -36,6 +36,10 @@ ul, ul li {
 	list-style: none;
 }
 
+li::marker {
+    content: none;
+}
+
 img {
 	vertical-align: top;
 }

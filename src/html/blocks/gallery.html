@@ -1,10 +1,24 @@
 <div class="container">
     <div class="gallery">
         <div class="gallery__slider">
-            SLIDER
+            <div class="galary__card">
+                @@loop('card.html', './data/gallary.json')
+                <!-- @@include('card.html') -->
+            </div>
         </div>
         <div class="gallery__scroll">
-            SCROLL
+            <div class="scroll__img">
+                <div class="scroll__titile title-5">
+                    <span><strong>TECHNOLOGIES & HARDWARE</strong></span>
+                    <span>USED BY GAME VR.</span>
+                </div>
+            </div>
+            <!-- <div class="scroll__titile">
+                
+            </div> -->
+            <div class="scroll__pagination">
+
+            </div>
         </div>
     </div>
 </div>

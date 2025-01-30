@@ -1,0 +1,42 @@
+.card {
+    padding: 25px;
+    width: 310px;
+    // height: 510px;
+    border-radius: 40px;
+    box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
+    background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211e2e 100%);
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.card__image img {
+    border-radius: 50%;
+    border: 15px solid rgba(14, 14, 14, 0.32);;
+}
+
+.card__title:nth-child(1){
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 2%;
+        width: 96%;
+        height: 1px;
+        background: #ffffff2e
+    }
+}
+
+.card__desc {
+    
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+
+    
+
+}
