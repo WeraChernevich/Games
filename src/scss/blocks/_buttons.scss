@@ -16,3 +16,14 @@
         border: 1px solid var(--btn--hover-border);
     }
 }
+
+.btn--small {
+    @include tablet {
+        display: none;
+    }
+}
+
+.btn--form {
+    width: 214px;
+    height: 48px;
+}

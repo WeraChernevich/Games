@@ -1,14 +1,19 @@
 .contact {
+    
+}
+
+.contact__list {
     padding: 50px 40px;
     border-radius: 90px;
     box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
     background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211e2e 100%);
-}
-
-.contact__list {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @include tablet {
+        display: none;
+    }
 }
 
 .contact__item {

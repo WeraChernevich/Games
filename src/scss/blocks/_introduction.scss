@@ -4,6 +4,10 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 80px;
+
+    @include tablet {
+        padding: 0 30px;
+    }
 }
 
 .introduction__desc,
@@ -12,11 +16,38 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+
+.introduction__desc {
+    
+    @include tablet {
+        display: none;
+    }
+}
+
+.introduction__about {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+}
+
+.introduction__about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .introduction__title h2,
 .introduction__about-title h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @include tablet {
+        align-items: center;
+    }
 }
 
 .introduction__title h2 span:first-child,

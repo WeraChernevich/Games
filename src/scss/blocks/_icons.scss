@@ -19,6 +19,10 @@
 	stroke: #c0b7e8;
 	width: 100px;
 	height: 100px;
+
+	@include tablet {
+		display: none;
+	}
 }
 
 .icon--location,
@@ -35,9 +39,14 @@
 }
 
 .icon--arrow-big-right {
+	display: block;
 	stroke: #c0b7e8;
 	width: 157px;
 	height: 60px;
+
+	@include tablet {
+		display: none;
+	}
 }
 
 .icon--arrow-extra-small-right {

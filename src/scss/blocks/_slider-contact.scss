@@ -1,0 +1,17 @@
+.slider-contact__slide {
+    display: none;
+
+    @include tablet {
+        border-radius: 90px;
+        min-width: 347px;
+        min-height: 109px;
+
+        box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
+        background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211e2e 100%);
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+}
