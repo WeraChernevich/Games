@@ -7,12 +7,27 @@
     border-radius: 90px;
     box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
     background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211e2e 100%);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
     @include tablet {
         display: none;
+    }
+}
+
+.contact__list li:nth-child(1),
+.contact__list li:nth-child(2) {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 5%;
+        bottom: 0;
+        height: 100%;
+        width: 1px;
+        background: rgba(192, 183, 232, 0.33);
+
     }
 }
 
