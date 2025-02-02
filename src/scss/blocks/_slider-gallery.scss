@@ -1,0 +1,56 @@
+.gallery__container {
+    @include mobile {
+        position: relative;
+        overflow: hidden;
+        width: 400px; /* задайте ширину слайдера */
+        margin: 20px auto;
+    }
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    flex-wrap: nowrap;
+}
+
+.slider > * {
+    @include mobile {
+        flex-shrink: 0;
+    }
+}
+
+.slider > *.active {
+    @include mobile {
+        opacity: 1; /* делаем полностью видимой активную карточку */
+    }
+}
+
+.slider__slide {
+    flex: 0 0 auto;
+    width: 100%;
+ }
+
+.slider__button {
+    @include mobile {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+
+.slider__button.slider__button--prev {
+    @include mobile {
+        left: 10px;
+    }
+}
+
+.slider__button.slider__button--next {
+    @include mobile {
+        right: 10px;
+    }
+}

@@ -9,14 +9,22 @@
     grid-template-columns: auto;
     align-items: center;
     justify-items: center;
+
+    @include mobile {
+        flex: 0 0 auto; /* не сжиматься и не растягиваться */
+        width: 100%; /* ширина 100% родителя */
+        margin: 0; /* убираем отступы */
+        box-sizing: border-box;
+        padding: 10px;
+    }
 }
 
 .card__image img {
     border-radius: 50%;
-    border: 15px solid rgba(14, 14, 14, 0.32);;
+    border: 15px solid rgba(14, 14, 14, 0.32);
 }
 
-.card__title:nth-child(1){
+.card__title:nth-child(1) {
     position: relative;
 
     &::before {
@@ -26,17 +34,13 @@
         left: 2%;
         width: 96%;
         height: 1px;
-        background: #ffffff2e
+        background: #ffffff2e;
     }
 }
 
 .card__desc {
-    
     display: grid;
     justify-items: center;
     text-align: center;
     gap: 20px;
-
-    
-
 }

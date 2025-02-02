@@ -7,10 +7,10 @@
     background-repeat: no-repeat;
     background-position: center center;
 
-    @include tablet {
+    @include mobile {
         padding: 0 30px;
         background: unset;
-        display: flex;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -19,7 +19,7 @@
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        gap: 50px;
+        gap: 30px;
     }
 }
 
@@ -53,7 +53,6 @@
 
 
 .introduction__content-right {
-    display: block;
 
     @include mobile {
         display: none;
@@ -70,19 +69,14 @@
     margin-top: 20px;
 }
 
-.introduction__title h2, {
+.introduction__title h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
-    @include tablet {
-        align-items: center;
-    }
-}
-
-.introduction__title h2 span:first-child,
-.introduction__about-title h2 span:first-child {
-    display: block;
+    // @include tablet {
+    //     align-items: center;
+    // }
 }
 
 .introduction__title-second-line {
@@ -90,39 +84,3 @@
     align-items: center;
     gap: 25px;
 }
-
-
-// .introduction__title h2,
-// .introduction__about-title h2 {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-
-//     @include tablet {
-//         align-items: center;
-//     }
-// }
-
-// .introduction__title h2 span:first-child,
-// .introduction__about-title h2 span:first-child{
-//     display: block;
-
-// }
-
-// .introduction__title-second-line {
-//     display: flex;
-//     align-items: center;
-//     gap: 25px;
-// }
-
-// .introduction__about {
-//     align-items: center;
-// }
-
-// .introduction__about img {
-//     border-radius: 240px 100px 240px 100px;
-// }
-
-// .introduction__about-title {
-//     padding-bottom: 40px;
-// }

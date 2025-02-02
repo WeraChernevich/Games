@@ -1,10 +1,12 @@
 <div class="container">
     <div class="gallery">
-        <div class="gallery__slider">
-            <div class="galary__card">
+        <div class="slider-container">
+            <div class="slider">
                 @@loop('card.html', './data/gallary.json')
                 <!-- @@include('card.html') -->
             </div>
+            <button class="slider__button slider__button--prev">&#8249;</button>
+            <button class="slider__button slider__button--next">&#8250;</button>
         </div>
         <div class="gallery__scroll">
             <div class="scroll__img">

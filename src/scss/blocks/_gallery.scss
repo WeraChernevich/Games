@@ -3,13 +3,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include tablet {
+    }
 }
 
-.galary__card {
-    display: flex;
-    gap: 20px;
-}
 
 .gallery__scroll {
-    padding-bottom: 50px;
+
+
+    @include tablet {
+        padding-bottom: 50px;
+        max-width: 350px;
+    }
 }
