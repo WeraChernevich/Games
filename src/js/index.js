@@ -6,8 +6,8 @@
 // 	// Your custom options
 // });
 
-import gallarySlider from './modules/gallary-slider.js';
-gallarySlider();
+import initSliders from './modules/gallary-slider.js';
+initSliders();
 
 // // Мобильная навигация
 // import mobileNav from './modules/mobile-nav.js';

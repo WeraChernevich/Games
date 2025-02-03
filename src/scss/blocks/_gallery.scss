@@ -5,15 +5,6 @@
     justify-content: space-between;
 
     @include tablet {
-    }
-}
-
-
-.gallery__scroll {
-
-
-    @include tablet {
-        padding-bottom: 50px;
-        max-width: 350px;
+        min-height: 795px;
     }
 }

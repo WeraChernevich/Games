@@ -1,7 +1,7 @@
 .card {
     padding: 25px;
-    width: 310px;
-    // height: 510px;
+    // width: 310px;
+    // min-height: 510px;
     border-radius: 40px;
     box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
     background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211e2e 100%);
@@ -11,11 +11,15 @@
     justify-items: center;
 
     @include mobile {
-        flex: 0 0 auto; /* не сжиматься и не растягиваться */
-        width: 100%; /* ширина 100% родителя */
-        margin: 0; /* убираем отступы */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 20px;
         box-sizing: border-box;
         padding: 10px;
+        margin: 0;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
     }
 }
 

@@ -1,56 +1,70 @@
-.gallery__container {
-    @include mobile {
-        position: relative;
+.slider-container {
+    position: relative;
+    @include tablet {
+        width: 320px;
         overflow: hidden;
-        width: 400px; /* задайте ширину слайдера */
         margin: 20px auto;
+        display: flex; /* Добавляем flexbox для контейнера */
+        flex-direction: column; /* Выравниваем по вертикали */
     }
 }
 
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    flex-wrap: nowrap;
-}
+    gap: 20px;
 
-.slider > * {
-    @include mobile {
-        flex-shrink: 0;
-    }
-}
-
-.slider > *.active {
-    @include mobile {
-        opacity: 1; /* делаем полностью видимой активную карточку */
+    @include tablet {
+        flex-wrap: nowrap;
+        gap: unset;
     }
 }
 
 .slider__slide {
-    flex: 0 0 auto;
-    width: 100%;
- }
-
-.slider__button {
-    @include mobile {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 20px;
+    @include tablet {
+        flex: 0 0 auto;
+        width: 100%;
+        opacity: 0.7; /* Затухаем неактивные слайды*/
+        transition: opacity 0.3s ease-in-out;
     }
 }
 
-.slider__button.slider__button--prev {
-    @include mobile {
+.slider__slide:first-child {
+    @include tablet {
+        opacity: 1; /* Убираем затухание первого слайда*/
+    }
+}
+
+.slider__button {
+    display: none;
+
+    @include tablet {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        background: #c0b7e8;
+        border-radius: 50%;
+        border: 6px solid #333;
+        cursor: pointer;
+        padding: 10px;
+        color: #333;
+        // z-index: 10;
+    }
+}
+.slider__button--prev {
+    display: none;
+
+    @include tablet {
+        display: block;
         left: 10px;
     }
 }
 
-.slider__button.slider__button--next {
-    @include mobile {
+.slider__button--next {
+    display: none;
+    @include tablet {
+        display: block;
         right: 10px;
     }
 }

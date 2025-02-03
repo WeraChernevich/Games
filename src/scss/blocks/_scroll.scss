@@ -2,7 +2,7 @@
     position: relative;
     height: 303px;
     width: 100%;
-    background-image: url('./../../img/scroll.png');
+    background-image: url("./../../img/scroll.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 160px;
@@ -23,12 +23,15 @@
         z-index: 10;
     }
 
-    .scroll__titile {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        z-index: 12;
+    @include tablet {
+        padding-bottom: 50px;
+        max-height: 163px;
     }
+}
 
-
+.scroll__titile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 12;
 }
