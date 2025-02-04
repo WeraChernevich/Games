@@ -58,7 +58,7 @@
         margin: 10px;
         background-image: url("./../../img/hero.png");
         background-size: cover;
-        background-position: center;
+        background-position: center center;
         border-radius: inherit;
         z-index: 2;
     }
@@ -67,6 +67,7 @@
         width: 524px;
         height: 425px;
         border-radius: 100px 100px 100px 240px;
+        background-position: left center;
     }
 
     @include tablet {

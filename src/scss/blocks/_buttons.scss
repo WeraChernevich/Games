@@ -9,7 +9,8 @@
 }
 
 .btn--small, 
-.btn--main {
+.btn--main, 
+.btn--form {
     &:hover {
         color: var(--text-color);
         background: var(--accent);
@@ -19,9 +20,9 @@
 
 .btn--small {
     width: 155px;
-    // @include tablet {
-    //     display: none;
-    // }
+    @include tablet {
+        display: none;
+    }
 }
 
 .btn--main {
