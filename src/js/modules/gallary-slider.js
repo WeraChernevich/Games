@@ -1,8 +1,8 @@
 function gallarySlider() {
     function initSlider(){
         const slider = document.querySelector('.slider');
-        const prevButton = document.querySelector('.slider__button--prev');
-        const nextButton = document.querySelector('.slider__button--next');
+        const prevButton = document.querySelector('.btn--prev-slider');
+        const nextButton = document.querySelector('.btn--next-slider');
         let slideIndex = 0;
         
          if(prevButton && nextButton){

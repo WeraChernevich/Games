@@ -1,19 +1,23 @@
 <div class="container">
     <div class="gallery">
-        <div class="slider-container">
-            <div class="slider">
-                @@loop('card.html', './data/gallary.json')
-                <!-- @@include('card.html') -->
+        <div class="slider-wrapper">
+            <div class="slider-container">
+                <div class="slider">
+                    @@loop('card.html', './data/gallary.json')
+                    <!-- @@include('card.html') -->
+                </div>
             </div>
-            <button class="slider__button slider__button--prev">
+            <button class="btn-slider btn--prev-slider">
                 <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.1666 26.9166L14.25 19L22.1666 11.0833" stroke="#433D60" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+                    <path d="M22.1666 26.9166L14.25 19L22.1666 11.0833" stroke="#433D60" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
             </button>
-            <button class="slider__button slider__button--next">
+            <button class="btn-slider btn--next-slider">
                 <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.8334 26.9166L23.75 19L15.8334 11.0833" stroke="#433D60" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+                    <path d="M15.8334 26.9166L23.75 19L15.8334 11.0833" stroke="#433D60" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
             </button>
         </div>
         <div class="gallery__scroll">
